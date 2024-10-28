@@ -35,6 +35,7 @@ def shop_trip() -> None:
             location=shops[0]["location"],
             products=shops[0]["products"]
         )
+
         for shop in shops:
             shop_instance = Shop(
                 name=shop["name"],
