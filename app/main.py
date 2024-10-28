@@ -63,6 +63,7 @@ def shop_trip() -> None:
             print(f"Date: {current_datetime}")
             print(f"Thanks, {customer_instance.name}, for your purchase!")
             print("You have bought:")
+
             cost_products = 0
             for product in customer_instance.products:
                 cost_any_product = (
