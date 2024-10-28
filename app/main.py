@@ -43,7 +43,7 @@ def shop_trip() -> None:
             )
             cost = customer_instance.cost_trip(
                 location=shop_instance.location,
-                fuel_pice=fuel_price
+                fuel_price=fuel_price
             ) + customer_instance.cost_product(
                 products=shop_instance.products
             )

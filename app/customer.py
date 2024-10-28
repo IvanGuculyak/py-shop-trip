@@ -6,7 +6,7 @@ class Customer:
     def __init__(
             self,
             name: str,
-            location: list[int, int],
+            location: list[int],
             products: dict,
             money: float,
             car: Car,
@@ -19,15 +19,15 @@ class Customer:
 
     def cost_trip(
             self,
-            location: list[int, int],
-            fuel_pice: float
+            location: list[int],
+            fuel_price: float
     ) -> float:
         distance = math.sqrt(
             (self.location[0] - location[0]) ** 2
             + (self.location[1] - location[1]) ** 2
         )
         cost = round(
-            (distance / 100 * self.car.fuel_consumption * fuel_pice * 2), 2
+            (distance / 100 * self.car.fuel_consumption * fuel_price * 2), 2
         )
         return cost
 
